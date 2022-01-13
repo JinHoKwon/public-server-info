@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  shutdown: graceful
+
+
+
+spring:
+  profiles:
+    active: default
+  application:
+    name: server-info
+    version: ${SPRING_APPLICATION_VERSION:v1.00.08}
+  lifecycle:
+    timeout-per-shutdown-phase: 1m
+
