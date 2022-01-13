@@ -1,2 +1,1 @@
-make: ./gradlew build -x test
-
+make: ./build.sh
