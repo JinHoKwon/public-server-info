@@ -28,6 +28,11 @@ public class MainController {
         return ResponseEntity.ok(Collections.singletonMap("status", "UP"));
     }
 
+    @GetMapping("/health")
+    ResponseEntity health() {
+        return ResponseEntity.ok(Collections.singletonMap("status", "OK"));
+    }
+
     @GetMapping
     ServerInfo serverInfo() {
         log.info("request serverInfo.");
